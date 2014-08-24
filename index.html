@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:fb="http://ogp.me/ns/fb#">
 <head>
 <title>Facebook Login JavaScript Example</title>
 <meta charset="UTF-8">
@@ -10,6 +10,14 @@
 <link rel='stylesheet' href='/resources/tutorial/css/example.css'/>
 <script id="fts" src="http://freshtilledsoil.com/embed/webrtc-v5.js?r=FTS0316-CZ6NqG97"></script>
 <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=259929430882993&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
     <script>
       function writeAddressName(latLng) {
         var geocoder = new google.maps.Geocoder();
@@ -207,6 +215,9 @@
 <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
 </fb:login-button>
 
+<div id="fb-root"></div>
+
+
 <div id="status">
 </div>
 
@@ -218,5 +229,7 @@
 <!-- Begin Fresh Tilled Soil Video Chat Embed Code -->
 <div id="freshtilledsoil_embed_widget" class="video-chat-widget"></div>
 <!-- End Fresh Tilled Soil Video Chat Embed Code -->
+<fb:like href="https://developers.facebook.com/docs/plugins/" layout="standard" action="like" show_faces="true" share="true"></fb:like>
+
 </body>
 </html>
