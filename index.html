@@ -112,8 +112,7 @@
       }
       
    </script>
-   <body>
-      <script>
+   <script>
          // This is called with the results from from FB.getLoginStatus().
          function statusChangeCallback(response) {
            console.log('statusChangeCallback');
@@ -193,19 +192,18 @@
            });
          }
       </script>
-      <!--
-         Below we include the Login Button social plugin. This button uses
-         the JavaScript SDK to present a graphical Login button that triggers
-         the FB.login() function when clicked.
-         -->
-      <div id="header">
-         <div>
-            <div>
-               <div id="logo">
-                  <a href="index.html"><img src="images/logo.gif" alt="Logo"/></a>
-               </div>
-               <div>
-                  <div>
+   <body style="margin: 0px; padding: 0px; font-family: 'Trebuchet MS',verdana;">
+   <table width="100%" style="height: 100%;" cellpadding="10" cellspacing="0" border="0">
+<tr>
+
+<!-- ============ HEADER SECTION ============== -->
+<td colspan="2" style="height: 100px;" bgcolor="#777d6a"><h1>Website Logo</h1></td></tr>
+
+
+<!-- ============ NAVIGATION BAR SECTION ============== -->
+<tr>
+	<td colspan="2" valign="middle" height="30" bgcolor="#a9ae9f">
+		<div>
                      <table>
                      <tr>
                         <td>
@@ -234,29 +232,28 @@
                         </td>
                      </tr>
                   </div>
-                  <form action="#">
-                     <input type="text" id="search" maxlength="30" />
-                     <input type="submit" value="" id="searchbtn" />
-                  </form>
-               </div>
-            </div>
-            <ul>
-               <li><a href="index.html">Home</a></li>
-               <li><a href="product.html">The Pastry shop</a></li>
-               <li class="current"><a href="about.html">About us</a></li>
-               <li><a href="services.html">Services</a></li>
-               <li><a href="blog.html">Blog</a></li>
-               <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-            <div class="section">
-               <a href="index.html"><img src="images/wedding-cupcakes-small.jpg" alt="Image"/></a>
-            </div>
-         </div>
-      </div>
-      <div id="content">
+	</td>
+</tr>
+<!-- ============ LEFT COLUMN (MENU) ============== -->
+<td width="20%" valign="top" bgcolor="#999f8e">
+<a href="#">Home</a><br>
+<a href="#">Events</a><br>
+<a href="#">Food</a><br>
+<a href="#">Wine</a><br>
+<a href="#">About Us</a>
+<a href="services.html">Services</a>
+<a href="blog.html">Blog</a>
+<a href="contact.html">Contact Us</a>
+</td>
+
+		<!--
+         Below we include the Login Button social plugin. This button uses
+         the JavaScript SDK to present a graphical Login button that triggers
+         the FB.login() function when clicked.
+         -->
+      
       <div class="section">
          <div>
-            <h3>Please read</h3>
             <p> Welcome to the most amazing Wine and dine club. The site is currently under construction. Please re-visit the site later. In the meanwhile you can contact us on xyz@abc.com</p>
          </div>
          <div>
@@ -270,7 +267,9 @@
       <div id="about">
       <div id="fb-root"></div>
       <div id="status"></div>
-      <h1>Location Details</h1>
+      <h2>Your current location</h2><br>
+	  <h1> THE BELOW FEATURE IS CURRENTLY BEING IMPLEMENTED </h1>
+	  <p> Check out all the logged in users on the map. Click on the user and start sharing </p>
       <div id="map"></div>
       <p><b>Address</b>: <span id="address"></span></p>
       <p id="error"></p>
