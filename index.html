@@ -206,59 +206,52 @@
       </tr>
       <!-- ============ NAVIGATION BAR SECTION ============== -->
       <tr>
-         <td colspan="2" valign="middle" height="30" bgcolor="#a9ae9f">
+         <td colspan="2" valign="Left" height="30" bgcolor="#a9ae9f">
             <div>
-               <table>
-                  <tr>
-                     <td>
-                        <a href="signup.html">My Account</a>
-                        <a href="signin.html" class="last">Sign in</a>
-                        <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
-                        <span id="signinButton">
-                        <span
-                           class="g-signin"
-                           data-callback="signinCallback"
-                           data-clientid="CLIENT_ID"
-                           data-cookiepolicy="single_host_origin"
-                           data-requestvisibleactions="http://schema.org/AddAction"
-                           data-scope="https://www.googleapis.com/auth/plus.login">
-                        </span>
-                        </span>
-                     </td>
-                     <td align = "right">
-                        <a href="index.html">Help</a>
-                     </td>
-                  </tr>
-            </div>
+               <a href="signup.html">My Account</a>
+					<a href="signin.html" class="last">Sign in</a>
+					<a href="index.html">Help</a>
+					<fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+					<span id="signinButton">
+					<span
+					   class="g-signin"
+					   data-callback="signinCallback"
+					   data-clientid="CLIENT_ID"
+					   data-cookiepolicy="single_host_origin"
+					   data-requestvisibleactions="http://schema.org/AddAction"
+					   data-scope="https://www.googleapis.com/auth/plus.login">
+					</span>
+					</span>
+			</div>
             </td>
-            </tr>
+       </tr>
             <!-- ============ LEFT COLUMN (MENU) ============== -->
-            <tr>
-            <td width="20%" valign="top" bgcolor="#999f8e">
-            <a href="#">Home</a><br>
-            <a href="#">Events</a><br>
-            <a href="#">Food</a><br>
-            <a href="#">Wine</a><br>
-            <a href="#">About Us</a>
-            <a href="services.html">Services</a>
-            <a href="blog.html">Blog</a>
-            <a href="contact.html">Contact Us</a>
-            </td>
-            <!-- ============ RIGHT COLUMN (CONTENT) ============== -->
-            <td width="80%" valign="top" bgcolor="#d2d8c7">
-            <div id="fb-root"></div>
-            <div id="status"></div>
-            <h2>Your current location</h2><br>
-            <h1> THE BELOW FEATURE IS CURRENTLY BEING IMPLEMENTED </h1>
-            <p> Check out all the logged in users on the map. Click on the user and start sharing </p>
-            <div id="map"></div>
-            <p><b>Address</b>: <span id="address"></span></p>
-            <p id="error"></p>
-            <!-- Begin Fresh Tilled Soil Video Chat Embed Code -->
-            <div id="freshtilledsoil_embed_widget" class="video-chat-widget"></div>
-            <!-- End Fresh Tilled Soil Video Chat Embed Code -->     
-            </td>
-            </tr>
+		<tr>
+			<td width="20%" valign="top" bgcolor="#999f8e">
+			<a href="#">Home</a><br>
+			<a href="#">Events</a><br>
+			<a href="#">Food</a><br>
+			<a href="#">Wine</a><br>
+			<a href="#">About Us</a>
+			<a href="services.html">Services</a>
+			<a href="blog.html">Blog</a>
+			<a href="contact.html">Contact Us</a>
+			</td>
+			<!-- ============ RIGHT COLUMN (CONTENT) ============== -->
+			<td width="80%" valign="top" bgcolor="#d2d8c7">
+			<div id="fb-root"></div>
+			<div id="status"></div>
+			<h2>Your current location</h2><br>
+			<h1> THE BELOW FEATURE IS CURRENTLY BEING IMPLEMENTED </h1>
+			<p> Check out all the logged in users on the map. Click on the user and start sharing </p>
+			<div id="map"></div>
+			<p><b>Address</b>: <span id="address"></span></p>
+			<p id="error"></p>
+			<!-- Begin Fresh Tilled Soil Video Chat Embed Code -->
+			<div id="freshtilledsoil_embed_widget" class="video-chat-widget"></div>
+			<!-- End Fresh Tilled Soil Video Chat Embed Code -->     
+			</td>
+		</tr>
             <!-- ============ FOOTER SECTION ============== -->
             <tr><td colspan="2" align="center" height="20" bgcolor="#777d6a">Copyright ©</td><td><fb:like href="https://developers.facebook.com/docs/plugins/" layout="standard" action="like" show_faces="true" share="true"></fb:like></td>
             <td>
