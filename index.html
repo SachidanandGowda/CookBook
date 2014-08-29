@@ -113,18 +113,19 @@
       
    </script>
    <script type="text/javascript">
-		function SearchFun()
-		{
-			var SR = document.getElementById("SearchResults")
-			if(SR.style.display == 'block')
-			{
-				SR.style.display = 'none';
-			}
-			else
-			{
-				SR.style.display = 'block';
-			}
-		}
+      function SearchFun()
+      {
+      	var SR = document.getElementById("SearchResults")
+      	if(SR.style.display == 'block')
+      	{
+      		SR.style.display = 'none';
+      	}
+      	else
+      	{
+      		SR.style.display = 'block';
+      	}
+      }
+       
    </script>
    <script>
       // This is called with the results from from FB.getLoginStatus().
@@ -208,117 +209,144 @@
    </script>
    <body style="margin: 0px; padding: 0px; font-family: 'Trebuchet MS',verdana;">
       <table width="100%" style="height: 100%;" cellpadding="10" cellspacing="0" border="0">
-      <tr>
-         <!-- ============ HEADER SECTION ============== -->
-      <tr>
-         <td colspan="2" style="height: 100px;" bgcolor="#777d6a">
-            <h1>Website Logo</h1>
-            <div>
-               <p> Welcome to the most amazing Wine and dine club. The site is currently under construction. Please re-visit the site later. In the meanwhile you can contact us on xyz@abc.com</p>
-            </div>
-			<td colspan="2" valign="RIGHT" height="100px" bgcolor="#a9ae9f">
-            <div>
-			<table><tr>
-					<td><a href="signup.html">My Account</a></td>
-					<td><a href="signin.html" class="last">Sign in</a></td>
-					<td><a href="index.html">Help</a></td>
-					<td><fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button></td>
-					<td><span id="signinButton">
-					<span
-					   class="g-signin"
-					   data-callback="signinCallback"
-					   data-clientid="CLIENT_ID"
-					   data-cookiepolicy="single_host_origin"
-					   data-requestvisibleactions="http://schema.org/AddAction"
-					   data-scope="https://www.googleapis.com/auth/plus.login">
-					 </span>
-                        </span>
+         <tr>
+            <!-- ============ HEADER SECTION ============== -->
+         <tr>
+            <td colspan="2" style="height: 100px;" bgcolor="#777d6a">
+               <h1>Website Logo</h1>
+               <div>
+                  <p> Welcome to the most amazing Wine and dine club. The site is currently under construction. Please re-visit the site later. In the meanwhile you can contact us on xyz@abc.com</p>
+               </div>
+            <td colspan="2" valign="RIGHT" height="100px" bgcolor="#a9ae9f">
+               <div>
+                  <table>
+                     <tr>
+                        <td><a href="signup.html">My Account</a></td>
+                        <td><a href="signin.html" class="last">Sign in</a></td>
+                        <td><a href="index.html">Help</a></td>
+                        <td>
+                           <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+                        </td>
+                        <td><span id="signinButton">
+                           <span
+                              class="g-signin"
+                              data-callback="signinCallback"
+                              data-clientid="CLIENT_ID"
+                              data-cookiepolicy="single_host_origin"
+                              data-requestvisibleactions="http://schema.org/AddAction"
+                              data-scope="https://www.googleapis.com/auth/plus.login">
+                           </span>
+                           </span>
+                        </td>
+                     </tr>
+                  <tr>
+                     <td>
+                        Use our custom search box to search for recipes
                      </td>
                   </tr>
-            </table>
-            </div>
+                  <tr>
+                     <td>
+                        <div id = "IngredientsBox">
+                           <input type="text" name="SearchBox" value="" size = 40><input type="button" value="Search" onclick = "SearchFun()"><a href = "ggg.com">Advanced Search </a>
+                        </div>
+                        
+                     </td>
+                  </tr>
+
+                  </table>
+               </div>
             </td>
             </td>
-            </tr>
-      <!-- ============ LEFT COLUMN (MENU) ============== -->
-		<tr>
-			<td width="20%" valign="top" bgcolor="#999f8e">
-			<a href="#">Home</a><br>
-			<a href="#">Events</a><br>
-			<a href="#">Food</a><br>
-			<a href="#">Wine</a><br>
-			<a href="#">About Us</a><br>
-			<a href="#">Services</a><br>
-			<a href="blog.html">Blog</a><br>
-			<a href="contact.html">Contact Us</a>
-			</td>
-			<!-- ============ RIGHT COLUMN (CONTENT) ============== -->
-			<td width="60%" valign="top" bgcolor="#d2d8c7">
-			<div id="fb-root"></div>
-			<div id="status"></div>
-			<h2>Your current location</h2><br>
-			<h1> THE BELOW FEATURE IS CURRENTLY BEING IMPLEMENTED </h1>
-			<p> Check out all the logged in users on the map. Click on the user and start sharing </p>
-			<div id="map"></div>
-			<p><b>Address</b>: <span id="address"></span></p>
-			<p id="error"></p>
-			<!-- Begin Fresh Tilled Soil Video Chat Embed Code -->
-			<div id="freshtilledsoil_embed_widget" class="video-chat-widget"></div>
-			<!-- End Fresh Tilled Soil Video Chat Embed Code -->     
-			</td>
-			<td width="20%" valign="top" bgcolor="#d2d8c7"> 
-				<table>
-					<tr><td> <h3> What's Trending </h3> </td></tr>
-					<tr>
-						<td>
-							<div>
-							<marquee onMouseOver="this.scrollAmount=0" onMouseOut="this.scrollAmount=2" scrollamount="2" direction="up" loop="true" width="30%">
-								<center>
-									<font color="#ffffff" size="+1"><a href = "www.google.com">Recipe for dish AAA</a></font><p> 
-									<font color="#ffffff" size="+1"><a href = "www.google.com">Formula 1: September 21,22 Marina street circuit</a></font><p>
-									<font color="#ffffff" size="+1"><a href = "www.google.com">Meet and Greet event, September 25</a></font><p>
-									<font color="#ffffff" size="+1"><a href = "www.google.com">Meet and Greet event, September 27</a></font><p>
-									<font color="#ffffff" size="+1"><a href = "www.google.com">Meet and Greet event, September 29</a></font><p>
-									<font color="#ffffff" size="+1"><a href = "www.google.com">Meet and Greet event, September 30</a></font>
-								</center>
-							</marquee>
-							</div>
-						</td>
-					</tr>
-					<tr></tr>
-					<tr></tr>
-					<tr>
-						<td>
-							<object width="560" height="315"><param name="movie" value="//www.youtube.com/v/1MG4G28SxRU?version=3&amp;hl=en_GB"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/1MG4G28SxRU?version=3&amp;hl=en_GB" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object>
-						</td>
-					</tr>
-					<tr><td>
-						Use our custom search box to search for recipes
-					</td></tr>
-					<tr>
-						<td>
-							<div id = "IngredientsBox">
-								<input type="text" name="SearchBox" value="" size = 40><input type="button" value="Search" onclick = "SearchFun()"><a href = "ggg.com">Advanced Search </a>
-							</div>
-							<div id = "SearchResults" display:none>
-								    The result of the search 
-							</div>
-						</td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-            <!-- ============ FOOTER SECTION ============== -->
-            <tr><td align="center" height="10" bgcolor="#777d6a">Copyright ©</td><td  align="center" height="10" bgcolor="#778d6a"><fb:like href="https://developers.facebook.com/docs/plugins/" layout="standard" action="like" show_faces="true" share="true"></fb:like></td>
+         </tr>
+         <!-- ============ LEFT COLUMN (MENU) ============== -->
+         <tr>
+            <td width="20%" valign="top" bgcolor="#999f8e">
+               <a href="#">Home</a><br>
+               <a href="#">Events</a><br>
+               <a href="#">Food</a><br>
+               <a href="#">Wine</a><br>
+               <a href="#">About Us</a><br>
+               <a href="#">Services</a><br>
+               <a href="blog.html">Blog</a><br>
+               <a href="contact.html">Contact Us</a>
+            </td>
+            <!-- ============ RIGHT COLUMN (CONTENT) ============== -->
+            <td width="60%" valign="top" bgcolor="#d2d8c7">
+               <div id="fb-root"></div>
+               <div id="status"></div>
+               <h2>Your current location</h2>
+               <br>
+               <h1> THE BELOW FEATURE IS CURRENTLY BEING IMPLEMENTED </h1>
+               <p> Check out all the logged in users on the map. Click on the user and start sharing </p>
+               <div id="map"></div>
+               <p><b>Address</b>: <span id="address"></span></p>
+               <p id="error"></p>
+               <!-- Begin Fresh Tilled Soil Video Chat Embed Code -->
+               <div id="freshtilledsoil_embed_widget" class="video-chat-widget"></div>
+               <!-- End Fresh Tilled Soil Video Chat Embed Code -->     
+            </td>
+            <td width="20%" valign="top" bgcolor="#d2d8c7">
+               <table>
+                  <tr>
+                     <td>
+                        <h3> What's Trending </h3>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div>
+                           <marquee onMouseOver="this.scrollAmount=0" onMouseOut="this.scrollAmount=2" scrollamount="2" direction="up" loop="true" width="30%">
+                              <center>
+                                 <font color="#ffffff" size="+1"><a href = "www.google.com">Recipe for dish AAA</a></font>
+                                 <p> 
+                                    <font color="#ffffff" size="+1"><a href = "www.google.com">Formula 1: September 21,22 Marina street circuit</a></font>
+                                 <p>
+                                    <font color="#ffffff" size="+1"><a href = "www.google.com">Meet and Greet event, September 25</a></font>
+                                 <p>
+                                    <font color="#ffffff" size="+1"><a href = "www.google.com">Meet and Greet event, September 27</a></font>
+                                 <p>
+                                    <font color="#ffffff" size="+1"><a href = "www.google.com">Meet and Greet event, September 29</a></font>
+                                 <p>
+                                    <font color="#ffffff" size="+1"><a href = "www.google.com">Meet and Greet event, September 30</a></font>
+                              </center>
+                           </marquee>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr></tr>
+                  <tr></tr>
+                  <tr>
+                     <td>
+                        <object width="560" height="315">
+                           <param name="movie" value="//www.youtube.com/v/1MG4G28SxRU?version=3&amp;hl=en_GB">
+                           </param>
+                           <param name="allowFullScreen" value="true">
+                           </param>
+                           <param name="allowscriptaccess" value="always">
+                           </param>
+                           <embed src="//www.youtube.com/v/1MG4G28SxRU?version=3&amp;hl=en_GB" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed>
+                        </object>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <!-- ============ FOOTER SECTION ============== -->
+         <tr>
+            <td align="center" height="10" bgcolor="#777d6a">Copyright ©</td>
+            <td  align="center" height="10" bgcolor="#778d6a">
+               <fb:like href="https://developers.facebook.com/docs/plugins/" layout="standard" action="like" show_faces="true" share="true"></fb:like>
+            </td>
             <td  align="center" height="10" bgcolor="#757d6a">
-            <div>
-            <h3>Address</h3>
-            <p>Singapore management university <br /> Singapore <br /> </p>
-            </div>
-            <div>
-            CALL US <span>44444444</span></div>
+               <div>
+                  <h3>Address</h3>
+                  <p>Singapore management university <br /> Singapore <br /> </p>
+               </div>
+               <div>
+                  CALL US <span>44444444</span>
+               </div>
             </td>
-            </tr>
-        </table>
+         </tr>
+      </table>
    </body>
 </html>
