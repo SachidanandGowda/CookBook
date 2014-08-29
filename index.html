@@ -219,10 +219,9 @@
                </div>
             <td colspan="2" valign="RIGHT" height="100px" bgcolor="#a9ae9f">
                <div>
-                  <table>
-                     <tr>
-                        <td><a href="signup.html">My Account</a></td>
-                        <td><a href="signin.html" class="last">Sign in</a></td>
+                  <table border = 1>
+                     <tr >
+                        <td><a href="signin.html">Sign in</a></td>
                         <td><a href="index.html">Help</a></td>
                         <td>
                            <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
@@ -240,14 +239,11 @@
                         </td>
                      </tr>
                   <tr>
-                     <td>
-                        Use our custom search box to search for recipes
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
+                     <td nowrap>
                         <div id = "IngredientsBox">
-                           <input type="text" name="SearchBox" value="" size = 40><input type="button" value="Search" onclick = "SearchFun()"><a href = "ggg.com">Advanced Search </a>
+                           <input type="text" name="SearchBox" value="" size = 40><input type="button" value="Broadcast Logged in User" onclick = "SearchFun()">
+<input type="button" value="SearchSite" onclick = "SearchFun()">
+&nbsp;&nbsp;&nbsp;<a href = "ggg.com">Advanced Search </a>
                         </div>
                         
                      </td>
