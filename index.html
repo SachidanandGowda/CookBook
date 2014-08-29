@@ -115,7 +115,15 @@
    <script type="text/javascript">
 		function SearchFun()
 		{
-			
+			var SR = document.getElementById("SearchResults")
+			if(SR.style.display == 'block')
+			{
+				SR.style.display = 'none';
+			}
+			else
+			{
+				SR.style.display = 'block';
+			}
 		}
    </script>
    <script>
@@ -225,7 +233,6 @@
 					   data-scope="https://www.googleapis.com/auth/plus.login">
 					</span>
 					</span></td>
-			</tr></table>
 			</div>
             </td>
          </td>
@@ -289,10 +296,11 @@
 					<tr>
 						<td>
 							<div id = "IngredientsBox">
-								<input type="text" name="SearchBox" value="SearchBox" size = 50><input type="button" value="Search" onclick = "SearchFun()"><a href = "ggg.com">Advanced Search </a>
+								<input type="text" name="SearchBox" value="" size = 50><input type="button" value="Search" onclick = "SearchFun()"><a href = "ggg.com">Advanced Search </a>
 							</div>
-							<div id = "SearchResults">
-								
+							<div id = "SearchResults" display:none>
+								<p> The result of the search is displayed in this section </p><br>
+								<p> Website under construction. Please re-visit later to explore more on this site.</p>
 							</div>
 						</td>
 					</tr>
